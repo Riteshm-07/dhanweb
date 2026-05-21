@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>P&L Heatmap</title>
+
+<link rel="stylesheet" href="heatmap.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+  <div class="logo">
+    dhan
+  </div>
+
+  <div class="nav-links">
+
+    <a href="#">Dashboard</a>
+    <a href="#">Portfolio</a>
+    <a class="active" href="#">
+      Reports
+    </a>
+
+  </div>
+
+</div>
+
+<div class="container">
+
+  <h1>P&L Heatmap</h1>
+
+  <!-- INPUT -->
+
+  <div class="input-box">
+
+    <input type="date" id="dateInput">
+
+    <input
+      type="number"
+      id="plInput"
+      placeholder="Daily P&L"
+    >
+
+    <button onclick="savePL()">
+      Add P&L
+    </button>
+
+  </div>
+
+  <!-- STATS -->
+
+  <div class="stats">
+
+    <div class="card">
+
+      <span>Total P&L</span>
+
+      <h2 id="totalPL">
+        ₹0
+      </h2>
+
+    </div>
+
+    <div class="card">
+
+      <span>Win Rate</span>
+
+      <h2 id="winRate">
+        0%
+      </h2>
+
+    </div>
+
+  </div>
+
+  <!-- HEATMAP -->
+
+  <div class="heatmap-wrapper">
+
+    <div id="calendar"></div>
+
+  </div>
+
+  <!-- CHART -->
+
+  <div class="chart-box">
+
+    <canvas id="chart"></canvas>
+
+  </div>
+
+</div>
+
+<script src="heatmap.js"></script>
+
+</body>
+</html>

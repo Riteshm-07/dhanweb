@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dhan Login</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- LEFT -->
+  <div class="left">
+
+    <div class="logo">
+
+      <div class="logo-circle">
+        ध
+      </div>
+
+      <div class="logo-text">
+        dhan
+      </div>
+
+    </div>
+
+    <h1>Welcome to Dhan</h1>
+
+    <p>
+      Start trading with incredible features.<br>
+      Trade like a Super Trader!
+    </p>
+
+    <div class="feature">
+
+      <div class="bolt">⚡</div>
+
+      <div class="feature-text">
+
+        <div class="fast">
+          Lightning Fast
+        </div>
+
+        <div class="trade">
+          Trading & Investing in
+          <span class="green">Currency</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+
+    <div class="login-card">
+
+      <div class="top-icon">
+        ध
+      </div>
+
+      <div class="login-title" id="formTitle">
+        Login to Dhan
+      </div>
+
+      <!-- LOGIN -->
+      <div id="loginForm">
+
+        <div class="input-group">
+
+          <label>Email</label>
+
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Enter email"
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>Password</label>
+
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter password"
+          >
+
+        </div>
+
+       <button type="button" onclick="login()">
+  Login
+</button>
+
+      </div>
+
+      <!-- SIGNUP -->
+      <div id="signupForm" style="display:none;">
+
+        <div class="input-group">
+
+          <label>Full Name</label>
+
+          <input
+            type="text"
+            id="signupName"
+            placeholder="Enter full name"
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>Email</label>
+
+          <input
+            type="email"
+            id="signupEmail"
+            placeholder="Enter email"
+          >
+
+        </div>
+
+        <div class="input-group">
+
+          <label>Password</label>
+
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Create password"
+          >
+
+        </div>
+<button type="button" onclick="signup()">
+  Create Account
+</button>
+      </div>
+
+      <div class="switch">
+
+        <span id="switchText">
+          Don't have account?
+        </span>
+
+        <a href="#" onclick="toggleForm()">
+          Sign Up
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
