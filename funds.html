@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Funds</title>
+
+<link rel="stylesheet" href="funds.css">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+  <div class="logo">
+    dhan
+  </div>
+
+  <div class="nav-links">
+
+    <a href="heatmap.html">
+      Dashboard
+    </a>
+
+    <a class="active" href="#">
+      Funds
+    </a>
+
+  </div>
+
+</div>
+
+<div class="container">
+
+  <h1>Funds</h1>
+
+  <div class="card">
+
+    <h3>Available Balance</h3>
+
+    <h1 id="balance">
+      ₹0
+    </h1>
+
+  </div>
+
+  <div class="card">
+
+    <h3>Add Funds</h3>
+
+    <input
+      type="number"
+      id="addMoney"
+      placeholder="Enter Amount"
+    >
+
+    <button onclick="addFunds()">
+      Add Funds
+    </button>
+
+  </div>
+
+  <div class="card">
+
+    <h3>Withdraw Funds</h3>
+
+    <input
+      type="number"
+      id="withdrawMoney"
+      placeholder="Enter Amount"
+    >
+
+    <button
+      class="withdraw-btn"
+      onclick="withdrawFunds()"
+    >
+      Withdraw
+    </button>
+
+  </div>
+
+  <div class="card">
+
+    <h3>History</h3>
+
+    <div id="history"></div>
+
+  </div>
+
+</div>
+
+<script src="funds.js"></script>
+
+</body>
+</html>
